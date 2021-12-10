@@ -1,0 +1,101 @@
+body{
+    background-image: url('librarie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body > table{
+    width: 80%;
+    
+}
+.titles{
+    color: #ffffff;
+    font-size: 28px;
+    font-family: 'Rubik';
+}
+table.list{
+    width:100%;
+}
+section{
+   margin: 5% 0% 0% 22%;
+}
+h1{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F2A74B;
+    background-color: #591902;
+    border: 1px solid #F2A74B;
+    margin: 5% 0% 0% 38%;
+    width: 25%;
+    text-align: center;
+    height: 70px;
+    padding-top: 20px;
+    border-radius: 30px;
+
+}
+
+td, th {
+    border-radius: 5%;
+    border: 1px solid #F2A74B;
+    text-align: left;
+    padding: 8px;
+    background-color: #591902;
+    color: #ffffff;
+    font-size: 20px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #F2A341;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 3px #999;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
+input[type=submit]:hover{
+    background-color: #BF4904;
+}
+input[type=submit]:active{
+    background-color: #EAB284;
+    box-shadow: 0 0 #666;
+}
+
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Librarie</title>
+    
+</head>
+
+<body>
+    <header>
+        <h1>The Big Labrarie</h1>
+    </header>
+    <section>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="sec-1"> 
+                        <label class="titles">Title</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="tiTle" id="tiTle">
+                    </div class="sec-1">
+                    <div>
+                        <label class="titles">Author</label>
+                        <input type="text" name="auThor" id="auThor">
+                    </div>
+                    <div class="sec-1">
+                        <label class="titles">Date</label>
+                        <input type="date" name="daTe" id="daTe">
+                    </div>
+                    <div class="sec-1">
+                        <label class="titles">Price</label>
+                        <input type="number" name="prIce" id="prIce" min="10" max="600">
+                    </div>
+                    <div class="sec-1">
+                    <label class="titles">Language</label>
+                        <input type="text" name="lanGuage" list="sliblio" id="lanGuage">
+                        <datalist id="sliblio">
+                            <option value="Français">
+                            <option value="Espagnol">
+                            <option value="English">
+                            <option value="Arabic">
+                        </datalist>
+                    </div>
+                    <div class="sec-1">
+                    <label class="titles">Type</label>
+                    <div class="input2">
+                        <input type='radio' id='roman' value='Roman'  name='tYpe'>
+                      <label for='roman'>Roman</label>
+                      
+                      <input type='radio' id='essai' value='Essai'   name='tYpe'>
+                      <label for='essai'>Essai</label>
+                      
+                      <input type='radio' id='bandle' value='BD'   name='tYpe'>
+                      <label for='bandle'>Bande-Dessinée</label>
+
+                      <input type='radio' id='roman' value='Children'  name='tYpe'>
+                      <label for='roman'>Children</label>
+
+                      <input type='radio' id='roman' value='Comic book'  name='tYpe'>
+                      <label for='roman'>Comic book</label>
+                      </div>
+                     
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="bookList">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Date</th>
+                            <th>Price</th>
+                            <th>Language</th>
+                            <th>Type</th>
+                            <th>Edit Or Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</section>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -21,24 +21,24 @@
             <td>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div class="sec-1"> 
-                        <label class="titles">Title</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                        <input type="text" name="tiTle" id="tiTle" placeholder="Title">
+                        <label class="titles">Title</label>
+                        <input type="text" name="tiTle" id="tiTle" placeholder="Title" required>
                     </div class="sec-1">
                     <div>
                         <label class="titles">Author</label>
-                        <input type="text" name="auThor" id="auThor" placeholder="Author">
+                        <input type="text" name="auThor" id="auThor" placeholder="Author" required>
                     </div>
                     <div class="sec-1">
                         <label class="titles">Date</label>
-                        <input type="date" name="daTe" id="daTe">
+                        <input type="date" name="daTe" id="daTe" required>
                     </div>
                     <div class="sec-1">
                         <label class="titles">Price</label>
-                        <input type="number" name="prIce" id="prIce" min="10" max="600" placeholder="Price">
+                        <input type="number" name="prIce" id="prIce" min="10" max="600" placeholder="Price" required>
                     </div>
                     <div class="sec-1">
                     <label class="titles">Language</label>
-                        <input type="text" name="lanGuage" list="sliblio" id="lanGuage" placeholder="Language">
+                        <input type="text" name="lanGuage" list="sliblio" id="lanGuage" placeholder="Language" required>
                         <datalist id="sliblio">
                             <option value="Français">
                             <option value="Espagnol">
